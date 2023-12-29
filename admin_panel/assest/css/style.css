@@ -6,9 +6,9 @@ a{
   .login_background{
 
 background-image: url(../img/login_background.jpg);
-background-position: cover;
-background-size: cover;
+/* height: 200vh; */
 
+background-size: cover;
 
 }
 
@@ -124,13 +124,15 @@ background-size: cover;
   background-color: rgb(0, 0, 0);
   color: white;
 }
-.container{
-width: 100%;
-padding-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
+  .containerscroll {
+    overflow: auto;
+    height: 70vh;
+    width: 90%;
+    margin: auto;
+   
+    /* padding-top: 2rem; */
+    margin-top: 2rem;
 }
 .container12{
   width: 100%;
@@ -328,7 +330,7 @@ table{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 350px;
+  width: 350px;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -536,7 +538,18 @@ table{
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
-
+#inventryForm {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background-color: #ffffff00;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
 /* Style for the overlay */
 #overlay {
   display: none;
