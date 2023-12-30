@@ -34,10 +34,10 @@ session_start();
       </ul>
       <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-  <?php echo isset($_SESSION['admin_id']) ? $_SESSION['admin_id'] : 'Undefined'; ?>
+  <?php echo isset($_SESSION['admin_name']) ? $_SESSION['admin_name'] : 'Undefined'; ?>
   </button>
   <ul class="dropdown-menu dropdown-menu-dark">
-    <li><a class="dropdown-item " href="#">Sign_Out</a></li>
+    <li><a class="dropdown-item " href="logout.php">Logout</a></li>
   </ul>
 </div>
       <div class="nav_mobile">

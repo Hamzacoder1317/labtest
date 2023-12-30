@@ -2,10 +2,7 @@
 require("admin_panel/Shared/config.php");
 session_start();
 
-// if(isset($_SESSION['user_name']))
-// {
-// 	header("location:index.php");
-// }
+
 
 if(isset($_POST['submit']))
 {
@@ -17,21 +14,21 @@ if(isset($_POST['submit']))
 	 if(mysqli_num_rows($result)>0)
      {
 			$row=mysqli_fetch_array($result);
-			$_SESSION['admin_id']=$row['Name'];
+
 			$_SESSION['admin_name']=$row['Name'];
 			header("location:admin_panel/inventry.php");
 	}  
         
     else 
         {
-		$sql1 = "SELECT * FROM `users`  where `user_email`='$email' AND `user_pasword`='$pass'";
+		$sql1 = "SELECT * FROM `user`  where `User_email`='$email' AND `user_paswword`='$pass'";
 						$result=mysqli_query($conn,$sql1);
 							if(mysqli_num_rows($result)>0)
                             {
 								$row=mysqli_fetch_array($result);
-								$_SESSION['user_id']=$row['user_id'];
-								$_SESSION['user_name']=$row['user_name'];
-								header("location:index.php");
+				
+								$_SESSION['user_name']=$row['Name'];
+								header("location:user_panel/inventry.php");
 							} 
 					}
 					

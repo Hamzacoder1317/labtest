@@ -45,52 +45,9 @@ require("shared/_nav.php")
 
       </div>
     </div>
- 
 
   
-      <form class="form" id="inventryForm1">
-        <div class="flex">
-          <h3 class="ps-2">Insert Record</h3>
-          <button class="POPUPCLOSE ms-5" onclick="closePopup()">
-            <span class="X"></span>
-            <span class="Y"></span>
-            <div class="close">Close</div>
-          </button>
-        </div>
-
-        <div class="flex">
-          <label>
-            <input required="" placeholder="" type="text" class="input" name="Equipment_Name">
-            <span>Equipment_Name</span>
-          </label>
-          <label>
-            <input required="" placeholder="" type="text" class="input" name="Make">
-            <span>Make</span>
-          </label>
-        </div>
-        <div class="flex">
-          <label>
-            <input required="" placeholder="" type="text" class="input" name="Model">
-            <span>Model</span>
-          </label>
-          <label>
-            <input required="" type="text" placeholder="" class="input" name="Serial">
-            <span>Serial</span>
-          </label>
-        </div>
-        <label>
-          <input required="" type="text" placeholder="" class="input" name="Specification">
-          <span>Specification</span>
-        </label>
-
-        <button class="fancy" id="submitBtn" type="button">
-          <span class="top-key"></span>
-          <span class="text">submit</span>
-          <span class="bottom-key-1"></span>
-          <span class="bottom-key-2"></span>
-        </button>
-        <p class="text-center text-info fw-bold" id="invmsg"></p>
-      </form>
+  
    
   </div>
 </body>
