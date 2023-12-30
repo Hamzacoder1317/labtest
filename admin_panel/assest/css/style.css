@@ -561,9 +561,18 @@ table{
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
-
-
-
+.nav_mobile{
+  display: none;
+}
+@media (max-width: 767.98px)
+{
+.nav_desktop{
+  display: none;
+}
+.nav_mobile{
+  display: block;
+}
+}
 
 
 
