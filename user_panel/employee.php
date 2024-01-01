@@ -22,7 +22,7 @@ require("shared/_nav.php")
     <div class="containerscroll">
       <div class="table-responsive">
         <table class="table table-striped table-success table-hover">
-          <thead>
+          <thead class="p_mobile">
             <tr>
 
               <th scope="col">ID</th>
@@ -35,19 +35,8 @@ require("shared/_nav.php")
               <th scope="col">Home_Address</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
+          <tbody class="p_mobile">
+          
           </tbody>
         </table>
 

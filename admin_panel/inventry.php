@@ -1,10 +1,8 @@
 <?php
-require("shared/_nav.php")
+require("shared/_nav.php");
+
 ?>
        
-     
-    </div>
-  </nav>
   <div class="login_background ">
 
 
@@ -12,7 +10,7 @@ require("shared/_nav.php")
     <div class="pt-5">
       <div class="container_serch">
         <div class="search-container">
-          <input class="input" id="searchrecord" placeholder="Enter Search Equipment_Name" type="text">
+          <input class="input" id="searchrecord" placeholder="Enter Search Equipment_Name" class="p_mobile" type="text">
           <svg viewBox="0 0 24 24" class="search__icon">
             <g>
               <path
@@ -26,8 +24,8 @@ require("shared/_nav.php")
     <div class="containerscroll">
       <div class="table-responsive">
         <table class="table table-striped table-success table-hover">
-          <thead>
-            <tr>
+          <thead class="p_mobile">
+            <tr >
 
   
               <th scope="col">Equipment_Name</th>
@@ -38,7 +36,7 @@ require("shared/_nav.php")
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="p_mobile">
          
           </tbody>
         </table>

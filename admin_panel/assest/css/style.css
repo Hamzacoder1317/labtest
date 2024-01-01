@@ -564,6 +564,10 @@ table{
 .nav_mobile{
   display: none;
 }
+.logo{
+  width:170px;
+   height:auto
+}
 @media (max-width: 767.98px)
 {
 .nav_desktop{
@@ -572,6 +576,32 @@ table{
 .nav_mobile{
   display: block;
 }
+.logo{
+  width:120px;
+   height:auto
+}
+.p_mobile{
+  font-size: 12px;
+}
+.container_serch {
+  max-width: 310px;
+}
+.input {
+
+  font-size: 14px;
+}
+.btn {
+  padding: 3px 6px;
+  
+}
+
+
+.btn-add {
+  
+  min-width: 40px;
+  min-height: 38px;
+}
+
 }
 
 

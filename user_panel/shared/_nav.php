@@ -1,6 +1,9 @@
 <?php
 session_start();
-
+if(!isset($_SESSION['user_name']))
+{
+	header("location:../index.php");
+}
 ?>
 
 
@@ -26,7 +29,7 @@ session_start();
 <body>
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <a href="index.html"><img src="assest/img/LABTEST_logo_2.png" width="170px" height="auto" alt=""></a>
+      <a href="index.html"><img src="assest/img/LABTEST_logo_2.png" class="logo" alt=""></a>
       <ul class="nav_desktop">
        
         <li><a href="inventry.php" id="anav">INVENTRY</a></li>
@@ -34,19 +37,19 @@ session_start();
       </ul>
       <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-  <?php echo isset($_SESSION['user_name']) ? $_SESSION['user_name'] : 'Undefined'; ?>
+  <span class="text-uppercase p_mobile"><?php echo isset($_SESSION['user_name']) ? $_SESSION['user_name'] : 'Undefined'; ?></span>
   </button>
   <ul class="dropdown-menu dropdown-menu-dark">
-    <li><a class="dropdown-item " href="logout.php">Sign_Out</a></li>
+    <li><a class="dropdown-item  p_mobile" href="logout.php">Logout</a></li>
   </ul>
 </div>
       <div class="nav_mobile">
-        <button class="btn-add me-2">
-          <a href="inventry.php"><i class="bi bi bi-cart4 fw-bolder text-danger fs-5"></i></a>
-        </button>
-        <button class="btn-add">
-          <a href="employee.php"><i class="bi bi-person-lines-fill text-danger fw-bolder fs-5"></i></a>
-        </button>
+      <a href="inventry.php">  <button class="btn-add me-2">
+         <i class="bi bi bi-cart4 fw-bolder text-danger fs-5"></i>
+        </button></a>
+        <a href="employee.php">  <button class="btn-add">
+          <i class="bi bi-person-lines-fill text-danger fw-bolder fs-5"></i>
+        </button></a>
       </div>
     </div>
   </nav>

@@ -31,8 +31,8 @@ if(isset($_POST['submit']))
 								header("location:user_panel/inventry.php");
 							} 
 					}
-					
 					}
+
 ?>
 
 
@@ -59,7 +59,7 @@ if(isset($_POST['submit']))
 <body>
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <a href="#"><img src="admin_panel/assest/img/LABTEST_logo_2.png" width="170px" height="auto" alt=""></a>
+      <a href="#"><img src="admin_panel/assest/img/LABTEST_logo_2.png" class="logo" alt=""></a>
     </div>
   </nav>
     <div class="login_background">
